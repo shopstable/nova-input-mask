@@ -34,14 +34,21 @@ export default {
      * Fill the given FormData object with the field's internal value.
      */
     fill(formData) {
+      this.value = (this.field.storeRawValue) ? input.inputmask.unmaskedvalue() : this.value
+
       formData.append(this.field.attribute, this.value || '')
     },
+
+    maskField() {
+      const field = document.getElementById(this.field.attribute)
+      
+      new Inputmask(this.field.mask).mask(field);
+    }
   },
 
   mounted() {
     if (this.field.mask) {
-      let im = new Inputmask(this.field.mask);
-      im.mask(document.getElementById(this.field.attribute));
+      this.maskField()   
     }
 
     if (this.field.phone_number && this.field.country == 'TM') {

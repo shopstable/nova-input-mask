@@ -1,13 +1,13 @@
 /*!
  * dist/inputmask
  * https://github.com/RobinHerbots/Inputmask
- * Copyright (c) 2010 - 2021 Robin Herbots
+ * Copyright (c) 2010 - 2023 Robin Herbots
  * Licensed under the MIT license
- * Version: 5.0.7
+ * Version: 5.0.8
  */
 
 /*!
- * vuex v4.0.2
- * (c) 2021 Evan You
+ * vuex v4.1.0
+ * (c) 2022 Evan You
  * @license MIT
  */

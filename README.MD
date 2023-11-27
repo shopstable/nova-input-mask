@@ -1,6 +1,6 @@
 # Nova input mask
 
-### Hello, this is just a wrapper for [input mask plugin](https://github.com/RobinHerbots/Inputmask). 
+### Hello, this is just a wrapper for [input mask plugin](https://github.com/RobinHerbots/Inputmask).
 
 ## Requirements
 
@@ -23,6 +23,10 @@ use Nurmuhammet\NovaInputmask\NovaInputmask;
 
 // ...
 
-NovaInputmask::make('Passport nomeri')
+NovaInputmask::make('Phone number')
     ->mask('999999') // mask syntax here
+
+// Storing raw value can be good for validation and search porpuses, so use storeRawValue() method. Resolved value will be masked automatically.
+NovaInputmask::make('Phone number')
+    ->storeRawValue()
 ```

@@ -16,7 +16,7 @@ class NovaInputmask extends Field
     /**
      * Make field phonenumber
      *
-     * @var string
+     * @param string $country
      */
     public function phonenumber(string $country)
     {
@@ -24,9 +24,17 @@ class NovaInputmask extends Field
     }
 
     /**
+     * Store raw value
+     */
+    public function storeRawValue()
+    {
+        return $this->withMeta(['storeRawValue' => true]);
+    }
+
+    /**
      * Mask field
      *
-     * @var string
+     * @param string $mask
      */
     public function mask(string $mask)
     {
