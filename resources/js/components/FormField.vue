@@ -34,7 +34,9 @@ export default {
      * Fill the given FormData object with the field's internal value.
      */
     fill(formData) {
-      this.value = (this.field.storeRawValue) ? input.inputmask.unmaskedvalue() : this.value
+      this.value = (
+          this.field.mask && this.field.storeRawValue
+      ) ? document.getElementById(this.field.attribute).inputmask.unmaskedvalue() : this.value
 
       formData.append(this.field.attribute, this.value || '')
     },
@@ -47,15 +49,13 @@ export default {
   },
 
   mounted() {
+    if (this.field.phone_number && this.field.country == 'TM') {
+      this.field.mask = '+(\\9\\93)-69-99-99-99';
+    }
+
     if (this.field.mask) {
       this.maskField()   
     }
-
-    if (this.field.phone_number && this.field.country == 'TM') {
-      let im = new Inputmask("+(\\9\\93)-69-99-99-99");
-      im.mask(document.getElementById(this.field.attribute));
-    }
-
   }
 }
 </script>
