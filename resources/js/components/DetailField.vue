@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import maskValue from '../maskValue'
+
 export default {
   props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
   mounted() {
