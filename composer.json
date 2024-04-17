@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nurmuhammet\\NovaInputmask\\FieldServiceProvider"
+                "shopstable\\NovaInputmask\\FieldServiceProvider"
             ]
         }
     },
