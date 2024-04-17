@@ -1,6 +1,6 @@
 # Nova input mask
 
-### Hello, this is just a wrapper for [input mask plugin](https://github.com/RobinHerbots/Inputmask).
+### Hello, this is just a fork of [input mask plugin](https://github.com/nurmuhammet-ali/nova-inputmask).
 
 ## Requirements
 
@@ -13,13 +13,13 @@ Install the package in a Laravel Nova project via Composer:
 
 ```bash
 # Install nova-inputmask
-composer require nurmuhammet/nova-inputmask
+composer require shopstable/nova-inputmask
 ```
 
 ## Usage
 
 ```php
-use Nurmuhammet\NovaInputmask\NovaInputmask;
+use Shopstable\NovaInputmask\NovaInputmask;
 
 // ...
 
@@ -30,5 +30,3 @@ NovaInputmask::make('Phone number')
 NovaInputmask::make('Phone number')
     ->storeRawValue()
 ```
-
-##  *If you find my open-source library helpful, consider supporting it by buying me a coffee: [Buy Me a Coffee](https://www.buymeacoffee.com/nurmuhammet). ☕*

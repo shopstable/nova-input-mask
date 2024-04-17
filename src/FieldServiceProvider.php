@@ -1,6 +1,6 @@
 <?php
 
-namespace Nurmuhammet\NovaInputmask;
+namespace Shopstable\NovaInputmask;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
