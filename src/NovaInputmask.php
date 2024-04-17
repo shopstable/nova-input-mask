@@ -1,6 +1,6 @@
 <?php
 
-namespace Nurmuhammet\NovaInputmask;
+namespace Shopstable\NovaInputmask;
 
 use Laravel\Nova\Fields\Field;
 
